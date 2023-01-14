@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <!-- Full Stack Web Dev Tuto-->
+    <!-- Creating the skeleton of your Portfolio-->
+
+    <head>
+        <title> My Portfolio!</title>
+        
+    <!--CSS stands for Cascading styl sheet --> 
+    <!--CSS: adding style to your html --> 
+        <link rel="stylesheet" href="Portfolioindexstyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--CSS: changing the font by embeding link from google fonts--> 
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+         <!--Creating a new div = the container to style it in a proper way --> 
+        <div class="container">
+
+            <div class="intro">
+            <!--adding pictures from your own library--> 
+                <img class="profile-picture" src="images/Queen.jpeg"/>
+                <h1 id="my-name">Audray Tety</h1>
+                <h3>Freelance Web developer</h3>
+                <p> {{ Sit back, relax and enjoy the show ! }}</p>
+            </div>
+
+            <div class="about-grid">
+
+                <div class="i-am">
+                    <h4>I am</h4>
+                    <ul class="about-list">
+                        <li class="about-list-item">A Pizza</li>
+                        <li class="about-list-item">A Bird</li>
+                        <li class="about-list-item">A word </li>
+                    </ul>
+                </div>
+
+                <div class="i-like">
+                    <h4> I like </h4>
+                    <ul class="about-list">
+                        <li class="about-list-item">Pizza</li>
+                        <li class="about-list-item">Chicken</li>
+                        <li class="about-list-item">Cheese!</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <h4 class="projects-heading"> My Projects </h4>
+            <div class="projects-grid">
+
+            <!--adding pictures from your own library--> 
+                <div class="project-image-wrapper">
+                <img class="project-image" src="images/annie-spratt.unsplash.jpg"/>
+                <h4> Project 1 </h4>
+                </div>
+
+                <div class="project-image-wrapper">
+                <img class="project-image" src="images/repentand-seekchristjesus.unsplash.jpg"/>
+                <h4> Project 2 </h4>
+                </div>
+                
+                <div class="project-image-wrapper">
+                <img class="project-image" src="images/mio-ito.unsplash.jpg"/>
+                <h4> Project 3 </h4>
+                </div>
+
+                <div class="project-image-wrapper">
+                <img class="project-image" src="images/meric-dagli.unsplash.jpg"/>
+                <h4> Project 4 </h4>
+                </div>
+
+            </div>
+
+            <div class="links-and-contacts">
+
+                <div class="links">
+                <h4>Links</h4>
+
+                <ul class="links-list">
+                    <li><a href="">Linkedin</a></li>
+                    <li><a href="">Github</a></li>
+                    <li><a href="">Instagram</a></li>
+                </ul>
+                </div>
+
+
+                <form action="#">
+                    <label for="email"> 
+                        <h4> Email: </h4>
+                        <input type="last name" id="last name" name="user_Last name">
+                    </label>
+
+                    <label for="message">
+                        <h4> Message: </h4>  <textarea id="message"></textarea>
+                    </label>
+
+                    <div class="submit-button-wrapper">
+            <!--give an id to the button to add an event listener--> 
+                    <input id="submit-button" type="submit" value="Send Message">
+                    </div>
+
+                </form>
+            </div>
+        
+        </div>
+      
+            <!--adding a script file to your html-->     
+            <script src="script.js"></script>
+    </body>
+</html>
+
